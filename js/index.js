@@ -13,6 +13,9 @@ function showArchitecture () {
 
 function renderResult (backend, frontend, database) {
     const [resultContainer] = document.getElementsByClassName('result-container')
+    while(resultContainer.firstChild) {
+        resultContainer.firstChild.remove()
+    }
     const frontEndTxtNode = document.createElement('p')
     frontEndTxtNode.textContent = frontend
 
