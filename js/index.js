@@ -11,7 +11,7 @@ function showArchitecture () {
     console.log(frontEndTechs[frontEnd])
     const database = Math.floor(Math.random() * Math.floor(databases.length))
     console.log(databases[database])
-    await renderResult(backendTechs[backEndIndex], frontEndTechs[frontEnd], databases[database])
+    renderResult(backendTechs[backEndIndex], frontEndTechs[frontEnd], databases[database])
 }
 
 function renderResult (backend, frontend, database) {
