@@ -1,4 +1,56 @@
+/* ===========================================
+Element Targets
+h1, h2, native html elements etc etc etc
+=========================================== */
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+
+}
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+/* ===========================================
+Containers
+Containers with spacing should go here
+=========================================== */
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.container-query {
+    display: grid;
+    align-self: center;
+    margin-left: 2rem;
+}
+
 .result-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ===========================================
+Buttons
+Containers with spacing should go here
+=========================================== */
+.button-main {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 100px;
+  font-size: 2rem;
+  width: 50%;
+  
 }
