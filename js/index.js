@@ -26,17 +26,11 @@ function renderResult (backend, frontend, database) {
     const backEndTxtNode = createTextElement('h3', backend)
     const databaseTxtNode = createTextElement('h3', database)
 
-    const frontEndDiv = document.createElement('div')
-    frontEndDiv.appendChild(frontEndTitleTxtNode)
-    frontEndDiv.appendChild(frontEndTxtNode)
+    const frontEndDiv = combineChildIntoDiv(frontEndTitleTxtNode,frontEndTxtNode)
 
-    const backendDiv = document.createElement('div')
-    backendDiv.appendChild(backEndTitleTxtNode)
-    backendDiv.appendChild(backEndTxtNode)
+    const backendDiv = combineChildIntoDiv(backEndTitleTxtNode,backEndTxtNode)
 
-    const databaseDiv = document.createElement('div')
-    databaseDiv.appendChild(DatabaseTitleTxtNode)
-    databaseDiv.appendChild(databaseTxtNode)
+    const databaseDiv = combineChildIntoDiv(DatabaseTitleTxtNode,databaseTxtNode)
 
     const docFragment = document.createDocumentFragment()
     docFragment.appendChild(frontEndDiv)
@@ -56,4 +50,12 @@ function createTextElement (tagName = 'p', content) {
     const element = document.createElement(tagName)
     element.textContent = content
     return element
+}
+
+function combineChildIntoDiv (...childs) {
+   const container = document.createElement('div')
+
+   childs.forEach((childNode) => container.appendChild(childNode))
+
+   return container
 }
