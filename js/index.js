@@ -16,13 +16,26 @@ function renderResult (backend, frontend, database) {
     while(resultContainer.firstChild) {
         resultContainer.firstChild.remove()
     }
-    const frontEndTxtNode = document.createElement('p')
+
+    //Titles
+    const frontEndTitleTxtNode = document.createElement('h3')
+    frontEndTitleTxtNode.textContent = 'Frontend'
+    const backEndTitleTxtNode = document.createElement('h3')
+    backEndTitleTxtNode.textContent= 'Backend'
+    const DatabaseTitleTxtNode = document.createElement('h3')
+    DatabaseTitleTxtNode.textContent = 'Database'
+
+
+    //Slot Machine Content
+    const frontEndTxtNode = document.createElement('h3')
     frontEndTxtNode.textContent = frontend
 
-    const backEndTxtNode = document.createElement('p')
+    const backEndTxtNode = document.createElement('h3')
     backEndTxtNode.textContent = backend
-    const databaseTxtNode = document.createElement('p')
+
+    const databaseTxtNode = document.createElement('h3')
     databaseTxtNode.textContent = database
+
     const docFragment = document.createDocumentFragment()
     docFragment.appendChild(frontEndTxtNode)
     docFragment.appendChild(backEndTxtNode)
