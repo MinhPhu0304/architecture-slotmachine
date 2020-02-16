@@ -20,25 +20,13 @@ const frontEndTechs = [
     'jQuery',
     'Backbone JS',
     'Svelte',
-    'Unity',
     'Flutter',
-    'Android App',
-    'Chatbot',
-    'iOS App',
-    'VR',
-    'Unreal Engine',
-    'GameMaker',
-    'Google Home',
-    'Alexa Skill',
-    'Facebook Messenger Bot',
     'HTML Canvas',
     'three.js',
-    'Google ARCore',
-    'Apple ARKit',
+    'deck.gl',
     'Web App',
     'Wordpress',
-    'Drupal',
-    'Joomla',
+ 
 
 
 ]
