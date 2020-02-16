@@ -30,7 +30,7 @@ const frontEndTechs = [
     'GameMaker',
     'Google Home',
     'Alexa Skill',
-    'Facebook Messenger Bot',
+    'FB Messenger Bot',
     'HTML Canvas',
     'three.js',
     'Google ARCore',
