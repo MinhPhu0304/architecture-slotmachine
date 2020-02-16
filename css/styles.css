@@ -4,10 +4,21 @@ h1, h2, native html elements etc etc etc
 =========================================== */
 html {
     font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
 }
 
 body {
     margin: 0;
+}
+
+footer {
+    color: white;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #EA80FC;
 }
 
 button {
@@ -15,7 +26,7 @@ button {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 300;
     font-size: 4rem;
     margin: 0;
     color: white;
@@ -25,6 +36,12 @@ h3 {
     color: white;
     font-size: 2rem;
     font-weight: 400;
+    margin: 0;
+}
+h4 {
+    color: grey;
+    font-weight: 400;
+    margin: 1rem 0;
 }
 p {
     margin: 0;
@@ -40,8 +57,8 @@ Containers with spacing should go here
 .grid-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  background-color: black;
+  height: 95vh;
+
 }
 
 .container-title {
@@ -64,18 +81,42 @@ Containers with spacing should go here
   justify-content: space-around;
   align-self: center;
 }
+/* ===========================================
+Text styles
+=========================================== */
+.frontend {
+    color: #B2FF59;
+    }
+    
+
+.backend {
+color: #F4FF81;
+}
+
+
+.db {
+color: #FF80AB;
+}
 
 /* ===========================================
 Buttons
 Containers with spacing should go here
 =========================================== */
 .button-main {
-  background-color: darkgrey;
+  background-color: #FFFFFF;
   border: none;
   color: black;
   padding: 1rem;
+  padding-top: 1.3rem;
   border-radius: 100px;
   font-size: 2rem;
+  font-weight: 700;
   width: 50%;
+  transition: all 0.15s;
   
+}
+.button-main:hover{
+    background-color: purple;
+    color: white;
+    transform: rotate3d(4, 4, 24, 3deg);
 }

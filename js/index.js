@@ -16,9 +16,9 @@ function renderResult (backend, frontend, database) {
     clearChildNode(resultContainer)
 
     //Titles
-    const frontEndTitleTxtNode = createTextElement('h3', 'Frontend')
-    const backEndTitleTxtNode = createTextElement('h3', 'Backend')
-    const DatabaseTitleTxtNode = createTextElement('h3', 'Database')
+    const frontEndTitleTxtNode = createTextElement('h4', 'Frontend')
+    const backEndTitleTxtNode = createTextElement('h4', 'Backend')
+    const DatabaseTitleTxtNode = createTextElement('h4', 'Database')
 
     //Slot Machine Content
     const frontEndTxtNode = createTextElement('h3', frontend)
