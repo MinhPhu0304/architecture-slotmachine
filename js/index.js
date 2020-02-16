@@ -29,9 +29,12 @@ function renderResult (backend, frontend, database) {
 
     //Slot Machine Content
     const frontEndTxtNode = createTextElement('h3', frontend)
+    frontEndTxtNode.classList.add('frontend')
 
     const backEndTxtNode = createTextElement('h3', backend)
+    backEndTxtNode.classList.add('backend')
     const databaseTxtNode = createTextElement('h3', database)
+    databaseTxtNode.classList.add('db')
 
     const frontEndDiv = combineChildIntoDiv(frontEndTitleTxtNode,frontEndTxtNode)
     frontEndDiv.classList.add('frontend')
