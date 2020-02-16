@@ -34,10 +34,13 @@ function renderResult (backend, frontend, database) {
     const databaseTxtNode = createTextElement('h3', database)
 
     const frontEndDiv = combineChildIntoDiv(frontEndTitleTxtNode,frontEndTxtNode)
+    frontEndDiv.classList.add('frontend')
 
     const backendDiv = combineChildIntoDiv(backEndTitleTxtNode,backEndTxtNode)
+    backendDiv.classList.add('backend')
 
     const databaseDiv = combineChildIntoDiv(DatabaseTitleTxtNode,databaseTxtNode)
+    databaseDiv.classList.add('db')
 
     const docFragment = document.createDocumentFragment()
     docFragment.appendChild(frontEndDiv)
