@@ -28,12 +28,17 @@ const frontEndTechs = [
     'VR',
     'Unreal Engine',
     'GameMaker',
-    'SquareSpace',
-    'Webflow',
+    'Google Home',
+    'Alexa Skill',
+    'Facebook Messenger Bot',
     'HTML Canvas',
     'three.js',
     'Google ARCore',
     'Apple ARKit',
+    'Web App',
+    'Wordpress',
+    'Drupal',
+    'Joomla',
 
 
 ]
