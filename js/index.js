@@ -16,22 +16,15 @@ function renderResult (backend, frontend, database) {
     clearChildNode(resultContainer)
 
     //Titles
-    const frontEndTitleTxtNode = document.createElement('h3')
-    frontEndTitleTxtNode.textContent = 'Frontend'
-    const backEndTitleTxtNode = document.createElement('h3')
-    backEndTitleTxtNode.textContent= 'Backend'
-    const DatabaseTitleTxtNode = document.createElement('h3')
-    DatabaseTitleTxtNode.textContent = 'Database'
+    const frontEndTitleTxtNode = createTextElement('h3', 'Frontend')
+    const backEndTitleTxtNode = createTextElement('h3', 'Backend')
+    const DatabaseTitleTxtNode = createTextElement('h3', 'Database')
 
     //Slot Machine Content
-    const frontEndTxtNode = document.createElement('h3')
-    frontEndTxtNode.textContent = frontend
+    const frontEndTxtNode = createTextElement('h3', frontend)
 
-    const backEndTxtNode = document.createElement('h3')
-    backEndTxtNode.textContent = backend
-
-    const databaseTxtNode = document.createElement('h3')
-    databaseTxtNode.textContent = database
+    const backEndTxtNode = createTextElement('h3', backend)
+    const databaseTxtNode = createTextElement('h3', database)
 
     const frontEndDiv = document.createElement('div')
     frontEndDiv.appendChild(frontEndTitleTxtNode)
@@ -57,4 +50,10 @@ function clearChildNode (node) {
     while(node.firstChild) {
         node.firstChild.remove()
     }
+}
+
+function createTextElement (tagName = 'p', content) {
+    const element = document.createElement(tagName)
+    element.textContent = content
+    return element
 }
