@@ -13,9 +13,7 @@ function showArchitecture () {
 
 function renderResult (backend, frontend, database) {
     const [resultContainer] = document.getElementsByClassName('result-container')
-    while(resultContainer.firstChild) {
-        resultContainer.firstChild.remove()
-    }
+    clearChildNode(resultContainer)
 
     //Titles
     const frontEndTitleTxtNode = document.createElement('h3')
@@ -24,7 +22,6 @@ function renderResult (backend, frontend, database) {
     backEndTitleTxtNode.textContent= 'Backend'
     const DatabaseTitleTxtNode = document.createElement('h3')
     DatabaseTitleTxtNode.textContent = 'Database'
-
 
     //Slot Machine Content
     const frontEndTxtNode = document.createElement('h3')
@@ -36,10 +33,28 @@ function renderResult (backend, frontend, database) {
     const databaseTxtNode = document.createElement('h3')
     databaseTxtNode.textContent = database
 
+    const frontEndDiv = document.createElement('div')
+    frontEndDiv.appendChild(frontEndTitleTxtNode)
+    frontEndDiv.appendChild(frontEndTxtNode)
+
+    const backendDiv = document.createElement('div')
+    backendDiv.appendChild(backEndTitleTxtNode)
+    backendDiv.appendChild(backEndTxtNode)
+
+    const databaseDiv = document.createElement('div')
+    databaseDiv.appendChild(DatabaseTitleTxtNode)
+    databaseDiv.appendChild(databaseTxtNode)
+
     const docFragment = document.createDocumentFragment()
-    docFragment.appendChild(frontEndTxtNode)
-    docFragment.appendChild(backEndTxtNode)
-    docFragment.appendChild(databaseTxtNode)
+    docFragment.appendChild(frontEndDiv)
+    docFragment.appendChild(backendDiv)
+    docFragment.appendChild(databaseDiv)
 
     resultContainer.appendChild(docFragment)
+}
+
+function clearChildNode (node) {
+    while(node.firstChild) {
+        node.firstChild.remove()
+    }
 }
