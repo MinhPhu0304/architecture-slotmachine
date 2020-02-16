@@ -10,6 +10,7 @@ const backendTechs = [
 ]
 
 const frontEndTechs = [
+   
     'React',
     'AngularJS',
     'Angular',
@@ -18,7 +19,23 @@ const frontEndTechs = [
     'Ember',
     'jQuery',
     'Backbone JS',
-    'Svelte'
+    'Svelte',
+    'Unity',
+    'Flutter',
+    'Android App',
+    'Chatbot',
+    'iOS App',
+    'VR',
+    'Unreal Engine',
+    'GameMaker',
+    'SquareSpace',
+    'Webflow',
+    'HTML Canvas',
+    'three.js',
+    'Google ARCore',
+    'Apple ARKit',
+
+
 ]
 
 const databases = [
