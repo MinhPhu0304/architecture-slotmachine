@@ -1,6 +1,7 @@
 import { backendTechs, databases, frontEndTechs } from './constants'
 
 const startBtn = document.getElementById('start')
+let timmerId
 
 startBtn.addEventListener('click', showArchitecture)
 
@@ -9,6 +10,12 @@ function showArchitecture () {
     const frontEnd = Math.floor(Math.random() * Math.floor(frontEndTechs.length))
     const database = Math.floor(Math.random() * Math.floor(databases.length))
     renderResult(backendTechs[backEndIndex], frontEndTechs[frontEnd], databases[database])
+    
+    if (!timmerId) timmerId = setInterval(showArchitecture, 100)
+    setTimeout(() => {
+        clearInterval(timmerId)
+        timmerId = null
+    }, 1000)
 }
 
 function renderResult (backend, frontend, database) {
