@@ -3,52 +3,52 @@ Element Targets
 h1, h2, native html elements etc etc etc
 =========================================== */
 html {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: black;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 footer {
-    color: white;
-    padding: 1rem;
+  color: white;
+  padding: 1rem;
 }
 
 a {
-    text-decoration: none;
-    color: #EA80FC;
+  text-decoration: none;
+  color: #ea80fc;
 }
 
 button {
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
-    font-weight: 300;
-    font-size: 4rem;
-    margin: 0;
-    color: white;
+  font-weight: 300;
+  font-size: 4rem;
+  margin: 0;
+  color: white;
 }
 
 h3 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
 }
 h4 {
-    color: grey;
-    font-weight: 400;
-    margin: 1rem 0;
+  color: grey;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 p {
-    margin: 0;
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: white;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: white;
 }
 /* ===========================================
 Containers
@@ -58,22 +58,20 @@ Containers with spacing should go here
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 95vh;
-
 }
 
 .container-title {
-    margin: 0rem 0;
+  margin: 0rem 0;
 }
 
 .container-description {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .container-query {
-    display: grid;
-    align-self: center;
-    margin-left: 2rem;
-
+  display: grid;
+  align-self: center;
+  margin-left: 2rem;
 }
 
 .result-container {
@@ -85,17 +83,15 @@ Containers with spacing should go here
 Text styles
 =========================================== */
 .frontend {
-    color: #B2FF59;
-    }
-    
-
-.backend {
-color: #F4FF81;
+  color: #b2ff59;
 }
 
+.backend {
+  color: #f4ff81;
+}
 
 .db {
-color: #FF80AB;
+  color: #ff80ab;
 }
 
 /* ===========================================
@@ -103,7 +99,7 @@ Buttons
 Containers with spacing should go here
 =========================================== */
 .button-main {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: black;
   padding: 1rem;
@@ -113,10 +109,75 @@ Containers with spacing should go here
   font-weight: 700;
   width: 50%;
   transition: all 0.15s;
-  
 }
-.button-main:hover{
-    background-color: purple;
-    color: white;
-    transform: rotate3d(4, 4, 24, 3deg);
+.button-main:hover {
+  background-color: purple;
+  color: white;
+  transform: rotate3d(4, 4, 24, 3deg);
+}
+
+/*For Tablet Screens 640px - 1300px*/
+@media only screen and (min-width: 640px) and (max-width: 1300px) {
+  .button-main {
+    padding: 1rem;
+    padding-top: 1.3rem;
+    font-size: 2rem;
+
+    width: 70%;
+  }
+
+  .container-query {
+    margin-top: 4rem;
+    align-self: start;
+    
+  }
+  .result-container {
+    display: grid;
+    align-self: start;
+    top: 0;
+  }
+
+  .grid-main {
+    grid-template-columns: 1fr;
+    height: 95vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/*For extra small screens*/
+@media screen and (min-width: 0px) and (max-width: 639px) {
+  .grid-main {
+    grid-template-columns: 1fr;
+  }
+  .container-title {
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+  .container-query {
+    margin-top: 2rem;
+        margin-right: 2rem;
+    align-self: start;
+  }
+  .result-container {
+    display: grid;
+    align-self: start;
+    
+  }
+  .button-main {
+    padding: 1rem;
+    padding-top: 1.3rem;
+
+    font-size: 2rem;
+
+    width: 100%;
+  }
+
+
 }
