@@ -15,7 +15,7 @@ function showArchitecture () {
     setTimeout(() => {
         clearInterval(timmerId)
         timmerId = null
-    }, 1000)
+    }, 2000)
 }
 
 function renderResult (backend, frontend, database) {
