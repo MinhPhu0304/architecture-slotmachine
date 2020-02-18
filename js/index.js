@@ -47,10 +47,5 @@ function renderResult(backend, frontend, database) {
     const databaseDiv = combineChildIntoDiv(DatabaseTitleTxtNode, databaseTxtNode)
     databaseDiv.classList.add('db')
 
-    const docFragment = document.createDocumentFragment()
-    docFragment.appendChild(frontEndDiv)
-    docFragment.appendChild(backendDiv)
-    docFragment.appendChild(databaseDiv)
-
-    resultContainer.appendChild(docFragment)
+    resultContainer.appendChild(combineDOMObjectsToFragment([frontEndDiv, backendDiv, databaseDiv]))
 }
