@@ -4,7 +4,9 @@ import {
   frontEndTechs,
   projectManagement,
   editorTech
-} from './10x-constants'
+} from './constants'
+
+import { combineChildIntoDiv, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
 
 const startBtn = document.getElementById('start')
 let timmerId
@@ -12,13 +14,11 @@ let timmerId
 startBtn.addEventListener('click', showArchitecture)
 
 function showArchitecture () {
-  const backEndIndex = Math.floor(
-    Math.random() * Math.floor(backendTechs.length)
-  )
-  const frontEnd = Math.floor(Math.random() * Math.floor(frontEndTechs.length))
-  const database = Math.floor(Math.random() * Math.floor(databases.length))
-  const editor = Math.floor(Math.random() * Math.floor(editorTech.length))
-  const manager = Math.floor(Math.random() * Math.floor(projectManagement.length))
+  const backEndIndex = getRandomIndexFromArray(backendTechs)
+  const frontEnd = getRandomIndexFromArray(frontEndTechs)
+  const database = getRandomIndexFromArray(databases)
+  const editor = getRandomIndexFromArray(editorTech)
+  const manager = getRandomIndexFromArray(projectManagement)
   renderResult(
     backendTechs[backEndIndex],
     frontEndTechs[frontEnd],
@@ -86,24 +86,4 @@ function renderResult (backend, frontend, database, editor, manager) {
   docFragment.appendChild(editorDiv)
   docFragment.appendChild(managerDiv)
   resultContainer.appendChild(docFragment)
-}
-
-function clearChildNode (node) {
-  while (node.firstChild) {
-    node.firstChild.remove()
-  }
-}
-
-function createTextElement (tagName = 'p', content) {
-  const element = document.createElement(tagName)
-  element.textContent = content
-  return element
-}
-
-function combineChildIntoDiv (...childs) {
-  const container = document.createElement('div')
-
-  childs.forEach(childNode => container.appendChild(childNode))
-
-  return container
 }

@@ -1,16 +1,18 @@
 import { backendTechs, databases, frontEndTechs } from './constants'
 
+import { combineChildIntoDiv, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
+
 const startBtn = document.getElementById('start')
 let timmerId
 
 startBtn.addEventListener('click', showArchitecture)
 
-function showArchitecture () {
-    const backEndIndex = Math.floor(Math.random() * Math.floor(backendTechs.length))
-    const frontEnd = Math.floor(Math.random() * Math.floor(frontEndTechs.length))
-    const database = Math.floor(Math.random() * Math.floor(databases.length))
+function showArchitecture() {
+    const backEndIndex = getRandomIndexFromArray(backendTechs)
+    const frontEnd = getRandomIndexFromArray(frontEndTechs)
+    const database = getRandomIndexFromArray(databases)
     renderResult(backendTechs[backEndIndex], frontEndTechs[frontEnd], databases[database])
-    
+
     if (!timmerId) timmerId = setInterval(showArchitecture, 100)
     setTimeout(() => {
         clearInterval(timmerId)
@@ -18,7 +20,7 @@ function showArchitecture () {
     }, 2000)
 }
 
-function renderResult (backend, frontend, database) {
+function renderResult(backend, frontend, database) {
     const [resultContainer] = document.getElementsByClassName('result-container')
     clearChildNode(resultContainer)
 
@@ -36,13 +38,13 @@ function renderResult (backend, frontend, database) {
     const databaseTxtNode = createTextElement('h3', database)
     databaseTxtNode.classList.add('db')
 
-    const frontEndDiv = combineChildIntoDiv(frontEndTitleTxtNode,frontEndTxtNode)
+    const frontEndDiv = combineChildIntoDiv(frontEndTitleTxtNode, frontEndTxtNode)
     frontEndDiv.classList.add('frontend')
 
-    const backendDiv = combineChildIntoDiv(backEndTitleTxtNode,backEndTxtNode)
+    const backendDiv = combineChildIntoDiv(backEndTitleTxtNode, backEndTxtNode)
     backendDiv.classList.add('backend')
 
-    const databaseDiv = combineChildIntoDiv(DatabaseTitleTxtNode,databaseTxtNode)
+    const databaseDiv = combineChildIntoDiv(DatabaseTitleTxtNode, databaseTxtNode)
     databaseDiv.classList.add('db')
 
     const docFragment = document.createDocumentFragment()
@@ -51,24 +53,4 @@ function renderResult (backend, frontend, database) {
     docFragment.appendChild(databaseDiv)
 
     resultContainer.appendChild(docFragment)
-}
-
-function clearChildNode (node) {
-    while(node.firstChild) {
-        node.firstChild.remove()
-    }
-}
-
-function createTextElement (tagName = 'p', content) {
-    const element = document.createElement(tagName)
-    element.textContent = content
-    return element
-}
-
-function combineChildIntoDiv (...childs) {
-   const container = document.createElement('div')
-
-   childs.forEach((childNode) => container.appendChild(childNode))
-
-   return container
 }
