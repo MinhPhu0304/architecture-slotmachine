@@ -23,8 +23,8 @@ function getRandomIndexFromArray (input) {
 }
 
 function combineDOMObjectsToFragment (...objects) {
-    const fragment = Document.createDocumentFragment()
-    objects.forEach((domObject) => fragment.appendChild(domObject))
+    const fragment = document.createDocumentFragment()
+    objects.map((domObject) => fragment.append(domObject))
     return fragment
 }
 

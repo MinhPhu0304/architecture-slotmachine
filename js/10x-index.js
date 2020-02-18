@@ -79,5 +79,11 @@ function renderResult (backend, frontend, database, editor, manager) {
   const managerDiv = combineChildIntoDiv(managerTitleTxtNode, managementTxtNode)
   managerDiv.classList.add('mgmt')
 
-  resultContainer.appendChild(combineDOMObjectsToFragment([frontEndDiv, backendDiv, databaseDiv, editorDiv, managerDiv]))
+  const docFragment = document.createDocumentFragment()
+  docFragment.appendChild(frontEndDiv)
+  docFragment.appendChild(backendDiv)
+  docFragment.appendChild(databaseDiv)
+  docFragment.appendChild(editorDiv)
+  docFragment.appendChild(managerDiv)
+  resultContainer.appendChild(docFragment)
 }
