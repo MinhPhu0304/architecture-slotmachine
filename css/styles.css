@@ -14,6 +14,7 @@ html {
   footer {
     color: white;
     padding: 1rem;
+    float: right;
   }
   
   a {
