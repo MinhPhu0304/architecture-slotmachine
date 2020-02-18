@@ -165,56 +165,6 @@ p {
 
 
 
-/*For extra small screens*/
-@media only screen and (min-width: 0px) and (max-width: 641px) {
-  .grid-main {
-    grid-template-columns: 1fr;
-    height: inherit;
-  }
-  .container-title {
-    font-size: 6rem;
-    line-height: 1.5;
-  }
-  p {
-    font-size: 3rem;
-    width: 85%;
-  }
-  .button-main {
-    margin-top: 2rem;
-    padding: 4rem;
-    padding-top: 4.3rem;
-
-    font-size: 4rem;
-
-    width: calc(100% - 2rem);
-  }
-
-  .result-container {
-    display: grid;
-    align-self: start;
-    margin: 4rem 0;
-    justify-self: start;
-    margin-left: 2rem;
-    grid-template-columns: 1fr;
-  }
-
-  .button-main:hover {
-    background-color: purple;
-    color: white;
-    transform: none;
-  }
-
-  h3 {
-    font-size: 8rem;
-    font-weight: 400;
-    margin: 0;
-  }
-  h4 {
-    color: grey;
-    font-size: 4rem;
-    margin: 1rem 0;
-  }
-}
 /* iPhone X*/
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .grid-main {
@@ -308,3 +258,56 @@ p {
     margin: 1rem 0;
   }
   }
+
+
+
+/*For extra small screens*/
+@media only screen and (min-width: 0px) and (max-width: 641px) {
+  .grid-main {
+    grid-template-columns: 1fr;
+    height: inherit;
+  }
+  .container-title {
+    font-size: 6rem;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 3rem;
+    width: 85%;
+  }
+  .button-main {
+    margin-top: 2rem;
+    padding: 4rem;
+    padding-top: 4.3rem;
+
+    font-size: 4rem;
+
+    width: calc(100% - 2rem);
+  }
+
+  .result-container {
+    display: grid;
+    align-self: start;
+    margin: 4rem 0;
+    justify-self: start;
+    margin-left: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .button-main:hover {
+    background-color: purple;
+    color: white;
+    transform: none;
+  }
+
+  h3 {
+    font-size: 8rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  h4 {
+    color: grey;
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+}
