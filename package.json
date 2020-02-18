@@ -2,10 +2,9 @@
   "name": "slot-machine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel serve index.html hack.html",
+    "start": "parcel serve *.html",
     "build": "parcel build index.html hack.html --no-source-maps"
   },
   "keywords": [],
