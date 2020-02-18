@@ -22,8 +22,15 @@ function getRandomIndexFromArray (input) {
    return  Math.floor(Math.random() * Math.floor(input.length))
 }
 
+function combineDOMObjectsToFragment (...objects) {
+    const fragment = Document.createDocumentFragment()
+    objects.forEach((domObject) => fragment.appendChild(domObject))
+    return fragment
+}
+
 export {
     combineChildIntoDiv,
+    combineDOMObjectsToFragment,
     createTextElement,
     clearChildNode,
     getRandomIndexFromArray

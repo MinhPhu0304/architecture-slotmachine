@@ -1,6 +1,6 @@
 import { backendTechs, databases, frontEndTechs } from './constants'
 
-import { combineChildIntoDiv, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
+import { combineChildIntoDiv, combineDOMObjectsToFragment, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
 
 const startBtn = document.getElementById('start')
 let timmerId
@@ -47,10 +47,5 @@ function renderResult(backend, frontend, database) {
     const databaseDiv = combineChildIntoDiv(DatabaseTitleTxtNode, databaseTxtNode)
     databaseDiv.classList.add('db')
 
-    const docFragment = document.createDocumentFragment()
-    docFragment.appendChild(frontEndDiv)
-    docFragment.appendChild(backendDiv)
-    docFragment.appendChild(databaseDiv)
-
-    resultContainer.appendChild(docFragment)
+    resultContainer.appendChild(combineDOMObjectsToFragment([frontEndDiv, backendDiv, databaseDiv]))
 }
