@@ -194,11 +194,13 @@ p {
   .result-container {
     display: grid;
     align-self: start;
-    margin: 4rem 0;
+    margin: 1rem 0;
     justify-self: start;
     margin-left: 2rem;
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
+
 
   .button-main:hover {
     background-color: purple;

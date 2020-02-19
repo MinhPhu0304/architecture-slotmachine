@@ -13,6 +13,7 @@ const backendTechs = [
     'Google Cloud',
     ' Amazon EC2',
     'Azure Cloud',
+    'No backend',
     'Alibaba Cloud'
    ]
    
@@ -41,7 +42,7 @@ const backendTechs = [
        'Android App',
        'Chatbot',
        'iOS App',
-       'VR',
+       'Any VR Platform',
        'Unreal Engine',
        'GameMaker',
        'Google Home',
@@ -64,7 +65,8 @@ const backendTechs = [
        'CouchDB',
        'ArangoDB',
        'Microsoft Excel',
-       'No database'
+       'No database',
+       'Static JSON File'
    ]
    
    const projectManagement = [
