@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve *.html",
-    "build": "parcel build index.html hack.html --no-source-maps"
+    "build": "parcel build *.html --no-source-maps"
   },
   "keywords": [],
   "author": "",
