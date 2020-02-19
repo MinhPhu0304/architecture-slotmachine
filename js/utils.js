@@ -22,9 +22,9 @@ function getRandomIndexFromArray (input) {
    return  Math.floor(Math.random() * Math.floor(input.length))
 }
 
-function combineDOMObjectsToFragment (...objects) {
+function combineDOMObjectsToFragment (domObjects) {
     const fragment = document.createDocumentFragment()
-    objects.map((domObject) => fragment.append(domObject))
+    domObjects.map((domObject) => fragment.append(domObject))
     return fragment
 }
 

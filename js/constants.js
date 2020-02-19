@@ -10,7 +10,6 @@ const backendTechs = [
 ]
 
 const frontEndTechs = [
-
     'React',
     'AngularJS',
     'Angular',
@@ -25,10 +24,7 @@ const frontEndTechs = [
     'three.js',
     'deck.gl',
     'Web App',
-    'Wordpress',
-
-
-
+    'Wordpress'
 ]
 
 const databases = [
@@ -73,7 +69,6 @@ const editorTech = [
     'Bluefish',
     'Spacemacs',
     'UltraEdit'
-
 ]
 
 export {
