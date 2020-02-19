@@ -33,6 +33,8 @@ const backendTechs = [
        'deck.gl',
        'Wordpress',
        'Drupal',
+       'Magento',
+       'Silverstripe',
        'Joomla',
        'Google ARCore',
        'Apple ARKit',
