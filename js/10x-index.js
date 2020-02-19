@@ -39,8 +39,8 @@ function renderResult (backend, frontend, database, editor, manager) {
   clearChildNode(resultContainer)
 
   //Define slot machine Titles
-  const frontEndTitleTxtNode = createTextElement('h4', 'Frontend')
-  const backEndTitleTxtNode = createTextElement('h4', 'Backend')
+  const frontEndTitleTxtNode = createTextElement('h4', 'Frontend Tech')
+  const backEndTitleTxtNode = createTextElement('h4', 'Backend Tech')
   const DatabaseTitleTxtNode = createTextElement('h4', 'Database')
   const editorTitleTxtNode = createTextElement('h4', 'IDE/Editor')
   const managerTitleTxtNode = createTextElement('h4', 'Project Management')

@@ -46,6 +46,7 @@ const backendTechs = [
        'Alexa Skill',
        'Messenger Bot',
        'Unity',
+       'Visual Basic'
     
    
    
@@ -59,7 +60,9 @@ const backendTechs = [
        'SQLite',
        'Maria DB',
        'CouchDB',
-       'ArangoDB'
+       'ArangoDB',
+       'Microsoft Excel',
+       'No database'
    ]
    
    const projectManagement = [
