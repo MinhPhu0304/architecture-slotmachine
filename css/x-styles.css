@@ -4,7 +4,7 @@ h1, h2, native html elements etc etc etc
 =========================================== */
 html {
   font-family: 'Josefin Sans', sans-serif;
-  background-color: black;
+  background-color: white;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 footer {
-  color: white;
+  color: black;
   padding: 1rem;
   float: right;
   bottom: 0;
@@ -31,17 +31,17 @@ h1 {
   font-weight: 300;
   font-size: 4rem;
   margin: 0;
-  color: white;
+  color: #333;
 }
 
 h3 {
-  color: white;
+  color: #333;
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
 }
 h4 {
-  color: grey;
+  color: darkgray;
   font-weight: 400;
   margin: 1rem 0;
 }
@@ -50,7 +50,7 @@ p {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.5;
-  color: white;
+  color: black;
 }
 /* ===========================================
   Containers
@@ -87,15 +87,23 @@ p {
   Text styles
   =========================================== */
 .frontend {
-  color: #b2ff59;
+  color: #558B2F;
 }
 
 .backend {
-  color: #f4ff81;
+  color: #FF3D00;
 }
 
 .db {
-  color: #ff80ab;
+  color: #FF1744;
+}
+
+.edit {
+  color: purple;
+}
+
+.mgmt {
+  color:darkmagenta;
 }
 
 /* ===========================================
@@ -103,9 +111,9 @@ p {
   Containers with spacing should go here
   =========================================== */
 .button-main {
-  background-color: #ffffff;
+  background-color: black;
   border: none;
-  color: black;
+  color: #ffffff;
   padding: 1rem;
   padding-top: 1.3rem;
   border-radius: 100px;
