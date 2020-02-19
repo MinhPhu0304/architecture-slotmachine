@@ -5,11 +5,13 @@ const backendTechs = [
     'Django',
     'Flask',
     'PHP',
+    'Rust',
     'Laravel',
     'Spring Boot'
 ]
 
 const frontEndTechs = [
+
     'React',
     'AngularJS',
     'Angular',
@@ -23,8 +25,27 @@ const frontEndTechs = [
     'HTML Canvas',
     'three.js',
     'deck.gl',
-    'Web App',
-    'Wordpress'
+    'Wordpress',
+    'Drupal',
+    'Magento',
+    'Silverstripe',
+    'Joomla',
+    'Google ARCore',
+    'Apple ARKit',
+    'Android App',
+    'Chatbot',
+    'iOS App',
+    'Any VR Platform',
+    'Unreal Engine',
+    'GameMaker',
+    'Google Home',
+    'Alexa Skill',
+    'Messenger Bot',
+    'Unity',
+    'Visual Basic'
+
+
+
 ]
 
 const databases = [
@@ -35,7 +56,10 @@ const databases = [
     'SQLite',
     'Maria DB',
     'CouchDB',
-    'ArangoDB'
+    'ArangoDB',
+    'Microsoft Excel',
+    'No database',
+    'Static JSON File'
 ]
 
 const projectManagement = [
@@ -69,6 +93,7 @@ const editorTech = [
     'Bluefish',
     'Spacemacs',
     'UltraEdit'
+
 ]
 
 export {

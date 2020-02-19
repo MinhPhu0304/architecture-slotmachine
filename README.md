@@ -5,6 +5,6 @@
 ### So you think you can code?
 
 Wanting something more difficult for your next web project or hackathon?
-Visit https://sa-slotmachine.netlify.com/ to generate an extra spicy hack challenge.
+Visit https://spicyhack.fun to generate an extra spicy hack challenge.
 
 
