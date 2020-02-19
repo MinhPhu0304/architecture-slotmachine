@@ -140,7 +140,6 @@ p {
     top: 0;
     justify-self: start;
     margin-left: 2rem;
-    grid-template-columns: 1fr 1fr;
   }
 
   .grid-main {
