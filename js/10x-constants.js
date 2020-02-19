@@ -5,13 +5,14 @@ const backendTechs = [
     'Django',
     'Flask',
     'PHP',
+    'Rust',
     'Laravel',
     'Spring Boot',
     'IBM Cloud',
     'Oracle Cloud',
     'Google Cloud',
-    'Two AWS services',
-    'Two Azure services',
+    ' Amazon EC2',
+    'Azure Cloud',
     'Alibaba Cloud'
    ]
    
@@ -21,7 +22,7 @@ const backendTechs = [
        'AngularJS',
        'Angular',
        'VueJS',
-       'Vanila JS',
+       'Vanilla JS',
        'Ember',
        'jQuery',
        'Backbone JS',

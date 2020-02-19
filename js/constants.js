@@ -15,7 +15,7 @@ const frontEndTechs = [
     'AngularJS',
     'Angular',
     'VueJS',
-    'Vanila JS',
+    'Vanilla JS',
     'Ember',
     'jQuery',
     'Backbone JS',
