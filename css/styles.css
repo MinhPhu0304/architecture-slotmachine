@@ -192,6 +192,7 @@ p {
     display: grid;
     align-self: start;
     margin: 4rem 0;
+    grid-template-columns: 1fr;
   }
 
   .button-main:hover {
@@ -211,6 +212,8 @@ p {
     margin: 1rem 0;
   }
 }
+
+
 
 @media only screen and (min-width : 414px) and (max-width : 736px) {
   /* iPhone 6 Plus, 7 Plus, 8 Plus */
@@ -239,6 +242,7 @@ p {
     display: grid;
     align-self: start;
     margin: 4rem 0;
+    grid-template-columns: 1fr;
   }
 
   .button-main:hover {
@@ -260,7 +264,7 @@ p {
   }
 
 
-
+.uselessClass {}
 /*For extra small screens*/
 @media only screen and (min-width: 0px) and (max-width: 641px) {
   .grid-main {
