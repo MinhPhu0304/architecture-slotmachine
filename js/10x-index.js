@@ -4,7 +4,7 @@ import {
   frontEndTechs,
   projectManagement,
   editorTech
-} from './constants'
+} from './10x-constants'
 
 import { combineChildIntoDiv, combineDOMObjectsToFragment, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
 
