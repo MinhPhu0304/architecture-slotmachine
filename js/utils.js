@@ -28,10 +28,18 @@ function combineDOMObjectsToFragment (domObjects) {
     return fragment
 }
 
+function createLinkElement (textContent) {
+    const aTag = document.createElement('a')
+    aTag.textContent = textContent
+    aTag.href = `https://lmgtfy.com/?q=${textContent}`
+    return aTag
+}
+
 export {
     combineChildIntoDiv,
     combineDOMObjectsToFragment,
     createTextElement,
+    createLinkElement,
     clearChildNode,
     getRandomIndexFromArray
 }

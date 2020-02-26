@@ -1,6 +1,7 @@
 import { backendTechs, databases, frontEndTechs } from './constants'
 
-import { combineChildIntoDiv, combineDOMObjectsToFragment, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
+import { combineChildIntoDiv, createLinkElement,
+    combineDOMObjectsToFragment, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
 
 const startBtn = document.getElementById('start')
 let timmerId
@@ -30,12 +31,12 @@ function renderResult(backend, frontend, database) {
     const DatabaseTitleTxtNode = createTextElement('h4', 'Database')
 
     //Slot Machine Content
-    const frontEndTxtNode = createTextElement('h3', frontend)
+    const frontEndTxtNode = createLinkElement(frontend)
     frontEndTxtNode.classList.add('frontend')
 
-    const backEndTxtNode = createTextElement('h3', backend)
+    const backEndTxtNode = createLinkElement(backend)
     backEndTxtNode.classList.add('backend')
-    const databaseTxtNode = createTextElement('h3', database)
+    const databaseTxtNode = createLinkElement(database)
     databaseTxtNode.classList.add('db')
 
     const frontEndDiv = combineChildIntoDiv(frontEndTitleTxtNode, frontEndTxtNode)

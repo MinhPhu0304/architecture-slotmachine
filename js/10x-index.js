@@ -6,7 +6,8 @@ import {
   editorTech
 } from './10x-constants'
 
-import { combineChildIntoDiv, combineDOMObjectsToFragment, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
+import { combineChildIntoDiv, createLinkElement,
+  combineDOMObjectsToFragment, createTextElement, clearChildNode, getRandomIndexFromArray } from './utils'
 
 const startBtn = document.getElementById('start')
 let timmerId
@@ -47,19 +48,19 @@ function renderResult (backend, frontend, database, editor, manager) {
 
   //Slot Machine Content
 
-  const frontEndTxtNode = createTextElement('h3', frontend)
+  const frontEndTxtNode = createLinkElement(frontend)
   frontEndTxtNode.classList.add('frontend')
 
-  const backEndTxtNode = createTextElement('h3', backend)
+  const backEndTxtNode = createLinkElement(backend)
   backEndTxtNode.classList.add('backend')
 
-  const databaseTxtNode = createTextElement('h3', database)
+  const databaseTxtNode = createLinkElement(database)
   databaseTxtNode.classList.add('db')
 
-  const editorTxtNode = createTextElement('h3', editor)
+  const editorTxtNode = createLinkElement(editor)
   databaseTxtNode.classList.add('edit')
 
-  const managementTxtNode = createTextElement('h3', manager)
+  const managementTxtNode = createLinkElement(manager)
   databaseTxtNode.classList.add('mgmt')
 
   // Combine title and output
