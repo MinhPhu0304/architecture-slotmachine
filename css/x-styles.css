@@ -17,12 +17,6 @@ footer {
   float: right;
   bottom: 0;
 }
-
-a {
-  text-decoration: none;
-  color: #ea80fc;
-}
-
 button {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -34,11 +28,13 @@ h1 {
   color: #333;
 }
 
-h3 {
+a {
   color: #333;
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
+  text-decoration: none;
+  color: #ea80fc;
 }
 h4 {
   color: darkgray;
