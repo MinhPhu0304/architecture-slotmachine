@@ -33,7 +33,7 @@ const backendTechs = [
     'Perl',
     'F#',
     'Dlang',
-    'magento'
+    'Magento'
 ]
 
 const frontEndTechs = [
