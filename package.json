@@ -10,8 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "parcel": "^1.12.4"
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
   },
   "browserslist": [
     "last 2 Chrome versions"
